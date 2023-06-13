@@ -1,0 +1,106 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='../styles/index.css')
+    link(rel='stylesheet' href='../styles/index-contact.css')
+    link(rel='stylesheet' href='../styles/index-animations.css')
+    link(rel='stylesheet' href='../styles/index-passion-carousel.css')
+    link(rel='stylesheet' href='../styles/style.css')
+    | <script type="importmap">    {        "imports": {        "three": "https://unpkg.com/three@0.150.1/build/three.module.js",        "three/addons/": "https://unpkg.com/three@0.150.1/examples/jsm/"        }    } </script>
+    
+
+    title #{title}
+body
+    .container
+        canvas#bg.puff-in-center 
+        .components
+            .chip
+                //-  Chip Modal 1
+                #chip-modal1.slide-in-fwd-center
+                    .chip__icon
+                        img#josh-photo(src='../static/images/Josh.png' alt='A picture of me!')
+                    .chip-about-me
+                        h1 Joshua Richardson
+                        p
+                        | As an empassioned developer, I'm happiest when
+                        | I am not just solving a problem, but melding with a team to tackle a common goal.
+                        p
+                        br
+                        | I am a veteran who has worked on multiple stacks, and has served in various positions both in leadership and as part both small and large teams.
+                    .btn_wrap
+                        span Contact
+                        .container-contact
+                            i.contact-photo
+                                a.contact-photo(href='https://www.codewars.com/users/Leaky%20Shoes' target='_blank')
+                                    img.contact-photo(src='../static/images/codewars-logo.svg')
+                            i.contact-photo
+                                a(href='mailto:joshuarichardson1478@gmail.com')
+                                    img.contact-photo(src='../static/images/email-logo.png')
+                            i.contact-photo
+                                a.contact-photo(href='https://www.linkedin.com/in/joshuarichardson1478/' target='_blank')
+                                    img.contact-photo(src='../static/images/linkedin-logo.png')
+                            i.contact-photo
+                                a.contact-photo(href='https://github.com/JoshuaERichardson' target='_blank')
+                                    img.contact-photo(src='../static/images/github-logo.png')
+                        ion-icon(name='color-palette')
+                    .chip__close
+                        ion-icon(name='close') 
+            #chip-modal2.slide-in-fwd-center
+                .chip__icon
+                    
+                    section.carousel(aria-label='Gallery')
+                        ol.carousel__viewport
+                            li#carousel__slide1.carousel__slide(tabindex='0')
+                                .carousel__snapper
+                                    a.carousel__prev(href='#carousel__slide4') Go to last slide
+                                    a.carousel__next(href='#carousel__slide2') Go to next slide
+                                    img.carousel-photos(src='../static/images/josh-lake.jpg')
+                                    
+
+                            li#carousel__slide2.carousel__slide(tabindex='1')
+                                .carousel__snapper
+                                    a.carousel__prev(href='#carousel__slide1') Go to previous slide
+                                    a.carousel__next(href='#carousel__slide3') Go to next slide
+                                    img.carousel-photos(src='../static/images/josh-lake2.jpg')
+                            li#carousel__slide3.carousel__slide(tabindex='2')
+                                .carousel__snapper
+                                    a.carousel__prev(href='#carousel__slide2') Go to previous slide
+                                    a.carousel__next(href='#carousel__slide4') Go to next slide
+                                    img.carousel-photos(src='../static/images/gunner.jpg')
+                            li#carousel__slide4.carousel__slide(tabindex='3')
+                                .carousel__snapper
+                                    a.carousel__prev(href='#carousel__slide3') Go to previous slide
+                                    a.carousel__next(href='#carousel__slide1') Go to first slide
+                                    img.carousel-photos(src='../static/images/nemo.jpg')
+                .chip-about-me
+                    h1 Some things I am passionate about: 
+                    br
+                    br
+                    p I have so many things to be thankful for in my life.  I met my husband here in Colorado back in 2013 while we were both stationed at Fort Carson.
+                    br 
+                    p We've grown to love this state and the fact that no matter where you go it looks like a Bob Ross painting.  
+                    br
+                    p We have two beautiful dogs, and when I'm not knee deep in code, I'm usually ankle deep in dog hair.
+                .chip__close
+
+            #chip-modal3.slide-in-fwd-center
+                
+                    //- include ./partials/projects.pug
+            .segmented-control
+                input#tab-1(type='radio' name='radio2' value='3' checked)
+                label#tab-1-1.segmented-control__1(for='tab-1')
+                    p Me
+                input#tab-2(type='radio' name='radio2' value='4')
+                label#tab-2-2.segmented-control__2(for='tab-2')
+                    p Passions
+                input#tab-3(type='radio' name='radio2' value='5')
+                label#tab-3-3.segmented-control__3(for='tab-3')
+                    p Projects
+                .segmented-control__color
+
+script(type="module" src='../js/index.js')
+
+script(async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js")
+

@@ -1,0 +1,6 @@
+canvas {
+    border-radius: 79px;
+    background: #597797;
+    box-shadow: inset 5px 5px 10px #435971,
+                inset -5px -5px 10px #6f95bd;
+}
