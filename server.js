@@ -1,7 +1,8 @@
 // Normal start up for local hosting an express server:
 const express = require('express');
+require('dotenv').config();
 const app = express();
-const port = 5001;
+const port = process.env.PORT || 5001;
 // Make a router:
 const router = express.Router();
 // Make a path:
