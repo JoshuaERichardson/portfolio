@@ -45,11 +45,11 @@ divTab3.addEventListener("click", function (e) {
     return;
   } else if (activeTab == 1) {
     parentDiv.replaceChild(divModal3, divModal1);
-    THREEinit();
+    // THREEinit();
     hideContainers();
   } else {
     parentDiv.replaceChild(divModal3, divModal2);
-    THREEinit();
+    // THREEinit();
     hideContainers();
   }
   activeTab = 3;
