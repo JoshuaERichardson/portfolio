@@ -18,6 +18,8 @@ document.getElementById("chip-modal3").remove();
 var activeTab = 1;
 divTab1.addEventListener("click", function (e) {
   if (activeTab == 1) {
+    // Return the selector back to "me" button:
+    activeTab = 1;
     return;
   } else if (activeTab == 2) {
     parentDiv.replaceChild(divModal1, divModal2);
@@ -45,12 +47,12 @@ divTab3.addEventListener("click", function (e) {
     return;
   } else if (activeTab == 1) {
     parentDiv.replaceChild(divModal3, divModal1);
-    THREEinit();
-    hideContainers();
+    // THREEinit();
+    // hideContainers();
   } else {
     parentDiv.replaceChild(divModal3, divModal2);
-    THREEinit();
-    hideContainers();
+    // THREEinit();
+    // hideContainers();
   }
   activeTab = 3;
 
@@ -70,7 +72,7 @@ function showContainers(){
   // Turn chip display to none:
   chip.style.display = "block";
   const bg = document.querySelector("#bg");
-  bg.style.display= "none";
+  // bg.style.display= "none";
 }
 
 

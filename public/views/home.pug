@@ -47,46 +47,50 @@ body
                         ion-icon(name='color-palette')
                     .chip__close
                         ion-icon(name='close') 
-            #chip-modal2.slide-in-fwd-center
-                .chip__icon
+                #chip-modal2.slide-in-fwd-center
+                    .chip__icon
+                        
+                        section.carousel(aria-label='Gallery')
+                            ol.carousel__viewport
+                                li#carousel__slide1.carousel__slide(tabindex='0')
+                                    .carousel__snapper
+                                        a.carousel__prev(href='#carousel__slide4') Go to last slide
+                                        a.carousel__next(href='#carousel__slide2') Go to next slide
+                                        img.carousel-photos(src='../static/images/josh-lake.jpg')
+                                        
+
+                                li#carousel__slide2.carousel__slide(tabindex='1')
+                                    .carousel__snapper
+                                        a.carousel__prev(href='#carousel__slide1') Go to previous slide
+                                        a.carousel__next(href='#carousel__slide3') Go to next slide
+                                        img.carousel-photos(src='../static/images/josh-lake2.jpg')
+                                li#carousel__slide3.carousel__slide(tabindex='2')
+                                    .carousel__snapper
+                                        a.carousel__prev(href='#carousel__slide2') Go to previous slide
+                                        a.carousel__next(href='#carousel__slide4') Go to next slide
+                                        img.carousel-photos(src='../static/images/gunner.jpg')
+                                li#carousel__slide4.carousel__slide(tabindex='3')
+                                    .carousel__snapper
+                                        a.carousel__prev(href='#carousel__slide3') Go to previous slide
+                                        a.carousel__next(href='#carousel__slide1') Go to first slide
+                                        img.carousel-photos(src='../static/images/nemo.jpg')
+                    .chip-about-me.chip-about-me-carousel
+                        h1 Some things I am passionate about: 
+                        br
+                        br
+                        p I have so many things to be thankful for in my life.  I met my husband here in Colorado back in 2013 while we were both stationed at Fort Carson.
+                        br 
+                        p We've grown to love this state and the fact that no matter where you go it looks like a Bob Ross painting.  
+                        br
+                        p We have two beautiful dogs, and when I'm not knee deep in code, I'm usually ankle deep in dog hair.
+                    .chip__close
+
+                #chip-modal3.slide-in-fwd-center
+                    .chip__icon
+                        include ./partials/projects-simple.pug
+                        
+                    .chip__close
                     
-                    section.carousel(aria-label='Gallery')
-                        ol.carousel__viewport
-                            li#carousel__slide1.carousel__slide(tabindex='0')
-                                .carousel__snapper
-                                    a.carousel__prev(href='#carousel__slide4') Go to last slide
-                                    a.carousel__next(href='#carousel__slide2') Go to next slide
-                                    img.carousel-photos(src='../static/images/josh-lake.jpg')
-                                    
-
-                            li#carousel__slide2.carousel__slide(tabindex='1')
-                                .carousel__snapper
-                                    a.carousel__prev(href='#carousel__slide1') Go to previous slide
-                                    a.carousel__next(href='#carousel__slide3') Go to next slide
-                                    img.carousel-photos(src='../static/images/josh-lake2.jpg')
-                            li#carousel__slide3.carousel__slide(tabindex='2')
-                                .carousel__snapper
-                                    a.carousel__prev(href='#carousel__slide2') Go to previous slide
-                                    a.carousel__next(href='#carousel__slide4') Go to next slide
-                                    img.carousel-photos(src='../static/images/gunner.jpg')
-                            li#carousel__slide4.carousel__slide(tabindex='3')
-                                .carousel__snapper
-                                    a.carousel__prev(href='#carousel__slide3') Go to previous slide
-                                    a.carousel__next(href='#carousel__slide1') Go to first slide
-                                    img.carousel-photos(src='../static/images/nemo.jpg')
-                .chip-about-me
-                    h1 Some things I am passionate about: 
-                    br
-                    br
-                    p I have so many things to be thankful for in my life.  I met my husband here in Colorado back in 2013 while we were both stationed at Fort Carson.
-                    br 
-                    p We've grown to love this state and the fact that no matter where you go it looks like a Bob Ross painting.  
-                    br
-                    p We have two beautiful dogs, and when I'm not knee deep in code, I'm usually ankle deep in dog hair.
-                .chip__close
-
-            #chip-modal3.slide-in-fwd-center
-                
                     //- include ./partials/projects.pug
             .segmented-control
                 input#tab-1(type='radio' name='radio2' value='3' checked)

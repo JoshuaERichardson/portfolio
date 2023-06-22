@@ -1,0 +1,28 @@
+#chip-modal3 {
+    /* Allow for internal scrolling */
+    overflow-y: auto;
+}
+.card-project-body {
+    height: 33%;
+    background-color: #e4ebf5;
+}
+.project-info-container {
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+.project-description-list {
+    list-style: inside;
+}
+
+
+div.row:nth-child(1) > a:nth-child(1) {
+    margin-bottom: 10%;
+}
+
+.project-link-container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  
