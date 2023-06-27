@@ -1,3 +1,7 @@
+body {
+    background-color: #e4ebf5;
+}
+
 #chip-modal3 {
     /* Allow for internal scrolling */
     overflow-y: auto;
