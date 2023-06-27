@@ -29,6 +29,8 @@ html {
   }
 }
 
+
+
 .container {
   height: 75vh;
   display: flex;
@@ -364,13 +366,9 @@ html {
 .chip-about-me {
   box-shadow: 5px 5px 10px var(--greyDark), -5px -5px 10px white;
   border-radius: 10px;
-  margin: 20% 10%;
-  
+  margin: 20% 10% 10% 10%;
   padding: 10px;
   color: #5670A9;
-}
-.chip-about-me-carousel {
-  /* height: 30vh; */
 }
 
 /*  SEGMENTED-CONTROL */
@@ -679,3 +677,4 @@ html {
     opacity: 1;
   }
 }
+
