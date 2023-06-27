@@ -15,7 +15,6 @@
     list-style: inside;
 }
 
-
 div.row:nth-child(1) > a:nth-child(1) {
     margin-bottom: 10%;
 }
