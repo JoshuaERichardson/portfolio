@@ -364,13 +364,13 @@ html {
 .chip-about-me {
   box-shadow: 5px 5px 10px var(--greyDark), -5px -5px 10px white;
   border-radius: 10px;
-  margin: 5%;
-  height: 20vh;
+  margin: 20% 10%;
+  
   padding: 10px;
   color: #5670A9;
 }
 .chip-about-me-carousel {
-  height: 30vh;
+  /* height: 30vh; */
 }
 
 /*  SEGMENTED-CONTROL */

@@ -225,7 +225,12 @@ ol, li {
 }
 
 .carousel-photos {
-  height: 40vh;
-  width: auto;
-  object-fit: contain;
+    height: 100%;
+    width: auto;
+    
+    object-fit: contain;
+}
+
+.carousel-info {
+    height: 45%;
 }
